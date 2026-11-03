@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "TutorNearMe Verify",
+    "slug": "tutornearme-verify",
+    "scheme": "tutornearme",
+    "version": "0.2.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tutornearme.verify"
+    },
+    "android": {
+      "package": "com.tutornearme.verify",
+      "permissions": [
+        "CAMERA",
+        "NFC",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Cho phép TutorNearMe sử dụng camera để chụp CCCD và xác minh danh tính."
+        }
+      ],
+      "@regulaforensics/document-reader",
+      "@regulaforensics/face-sdk",
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e4f67496-0d97-4573-b4d6-fd0844612fba"
+      }
+    }
+  }
+}

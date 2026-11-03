@@ -1,0 +1,30 @@
+{
+  "name": "tutornearme-verify",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "expo start --localhost",
+    "android": "set \"NODE_OPTIONS=--dns-result-order=ipv4first\" && adb reverse tcp:8081 tcp:8081 && expo start --dev-client --localhost --clear -a",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@regulaforensics/document-reader": "^9.9.1206",
+    "@regulaforensics/document-reader-core-fullauthrfid": "^9.9.3305",
+    "@regulaforensics/face-core-basic": "8.4.884",
+    "@regulaforensics/face-sdk": "8.4.1444",
+    "@supabase/supabase-js": "^2.117.1",
+    "expo": "~57.0.27",
+    "expo-asset": "~57.0.19",
+    "expo-camera": "~57.0.6",
+    "expo-crypto": "~57.0.4",
+    "expo-dev-client": "~57.0.19",
+    "expo-file-system": "~57.0.7",
+    "expo-secure-store": "~57.0.4",
+    "expo-system-ui": "~57.0.4",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-url-polyfill": "^4.0.0"
+  }
+}
